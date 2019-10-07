@@ -1,3 +1,22 @@
 h1 {
   color: blue;
 }
+
+body {
+  max-width: 700px;
+  display: block;
+  margin: auto;
+
+}
+
+p.text-a {
+  font-family: "Source Code Pro";
+}
+
+p.text-b {
+  font-family: Arial;
+}
+
+img.profile-pic {
+  width: 100%;
+}
