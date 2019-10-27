@@ -1,36 +1,567 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Vanessa's Website</title>
-  </head>
+  <!--
+    File: index.html
+    Vanessa Chen
+    Contact: chenvanessa007@gmail.com
+    MIT Licensed - see http://opensource.org/licenses/MIT for details.
+    Created: October 6, 2019.
+    Last Updated: October 6, 2019.
 
-  <body>
-    <img class="profile-pic" src="assets/ProfilePic_Website.jpg" alt="Hello!" title="this is a picture of me">
-    <h1>This is my header</h1>
-    <p class="text-a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat id porta nibh venenatis cras sed. Hendrerit dolor magna eget est. Condimentum vitae sapien pellentesque habitant morbi tristique. Elit duis tristique sollicitudin nibh sit amet commodo. Arcu felis bibendum ut tristique et egestas quis ipsum. Sodales neque sodales ut etiam sit amet. Lacus sed turpis tincidunt id aliquet risus feugiat in. Nunc sed id semper risus in hendrerit gravida. Pretium aenean pharetra magna ac placerat. Sed sed risus pretium quam. Platea dictumst quisque sagittis purus. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Tincidunt vitae semper quis lectus nulla at volutpat diam. </p>
-    <p class="text-b">
+    Vanessa Chen's personal website. This site details Vanessa's interests, projects,
+    resume, and blog.
 
-Purus sit amet luctus venenatis lectus magna. Sit amet tellus cras adipiscing enim eu. Tempor id eu nisl nunc. Orci dapibus ultrices in iaculis. Cras sed felis eget velit aliquet sagittis id. Arcu risus quis varius quam quisque id diam vel. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Ac turpis egestas integer eget aliquet nibh. Ut pharetra sit amet aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Dolor sit amet consectetur adipiscing elit ut. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Est ultricies integer quis auctor elit sed vulputate mi.
+    Template from: https://github.com/JasonD94/jasond94.github.io
+  -->
 
-Interdum varius sit amet mattis vulputate. Commodo elit at imperdiet dui accumsan sit amet nulla. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Morbi tincidunt augue interdum velit euismod in pellentesque. Massa massa ultricies mi quis hendrerit dolor magna eget. Integer vitae justo eget magna fermentum iaculis eu non diam. Dui vivamus arcu felis bibendum ut tristique et. Et ultrices neque ornare aenean euismod elementum. Adipiscing commodo elit at imperdiet dui accumsan. Vitae elementum curabitur vitae nunc sed. Nullam non nisi est sit. Sed egestas egestas fringilla phasellus faucibus scelerisque. Sed odio morbi quis commodo odio aenean. Aliquam sem et tortor consequat id. Senectus et netus et malesuada. Facilisis magna etiam tempor orci eu lobortis. Posuere ac ut consequat semper viverra nam libero justo. Sem nulla pharetra diam sit amet nisl. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus.
+  <!-- Custom Title Bar -->
+  <title>Vanessa Chen's Website</title>
 
-Vivamus arcu felis bibendum ut tristique et. Sed vulputate odio ut enim. Faucibus in ornare quam viverra orci sagittis. Turpis cursus in hac habitasse. Nunc sed id semper risus. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Ut lectus arcu bibendum at varius vel pharetra vel turpis. At auctor urna nunc id cursus metus aliquam. Arcu risus quis varius quam quisque id diam vel. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Maecenas sed enim ut sem.
+  <!-- Bootstrap Core CSS -->
+  <!-- 10/9/2019: Updated to the latest version of Bootstrap (4.3.1) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Euismod nisi porta lorem mollis. Scelerisque viverra mauris in aliquam sem fringilla. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Gravida neque convallis a cras semper auctor neque. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Pulvinar proin gravida hendrerit lectus a. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Arcu ac tortor dignissim convallis aenean et tortor. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Condimentum lacinia quis vel eros donec ac. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Vitae et leo duis ut diam quam. Nulla aliquet enim tortor at auctor urna. Arcu non sodales neque sodales ut.
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+  rel='stylesheet' type='text/css'>
 
-Ut enim blandit volutpat maecenas volutpat blandit aliquam. Adipiscing elit ut aliquam purus. Quisque sagittis purus sit amet volutpat consequat. Purus semper eget duis at tellus at urna. Sed velit dignissim sodales ut. Ut porttitor leo a diam sollicitudin tempor id. Sit amet venenatis urna cursus eget. Urna duis convallis convallis tellus id. Ornare massa eget egestas purus viverra. Leo duis ut diam quam. Neque laoreet suspendisse interdum consectetur libero. Ornare arcu dui vivamus arcu. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Tellus orci ac auctor augue mauris augue neque gravida in. Cum sociis natoque penatibus et.
+  <!-- Plugin CSS -->
+  <link href="css/magnific-popup.css" rel="stylesheet">
 
-Tempus imperdiet nulla malesuada pellentesque elit eget. Sollicitudin aliquam ultrices sagittis orci a. Libero id faucibus nisl tincidunt eget nullam non nisi est. Viverra orci sagittis eu volutpat odio facilisis mauris. Eu scelerisque felis imperdiet proin. Nibh tellus molestie nunc non blandit massa enim nec dui. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Massa tincidunt dui ut ornare lectus sit amet. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Ultricies integer quis auctor elit sed vulputate mi.
+  <!-- Theme CSS -->
+  <link href="css/creative.min.css" rel="stylesheet">
 
-A diam sollicitudin tempor id eu nisl nunc mi. Id aliquet risus feugiat in ante metus dictum at. Commodo ullamcorper a lacus vestibulum sed arcu. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Fringilla urna porttitor rhoncus dolor purus non. Rhoncus aenean vel elit scelerisque mauris pellentesque. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Diam phasellus vestibulum lorem sed. Aliquam faucibus purus in massa tempor. Lacus viverra vitae congue eu consequat ac felis donec. Ullamcorper sit amet risus nullam eget. Leo a diam sollicitudin tempor id eu nisl nunc. Mi proin sed libero enim sed. In cursus turpis massa tincidunt dui. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Ac odio tempor orci dapibus ultrices in iaculis. Pulvinar elementum integer enim neque volutpat ac tincidunt. Volutpat lacus laoreet non curabitur. Semper quis lectus nulla at volutpat diam ut venenatis.
+  <!-- Index CSS -->
+  <link href="css/index.css" rel="stylesheet">
 
-Vulputate ut pharetra sit amet aliquam id diam. Egestas sed sed risus pretium quam vulputate dignissim. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Egestas sed tempus urna et pharetra pharetra. Aliquet porttitor lacus luctus accumsan tortor posuere. Risus sed vulputate odio ut enim. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Condimentum id venenatis a condimentum vitae. Vitae auctor eu augue ut lectus arcu bibendum at. Elementum integer enim neque volutpat ac tincidunt vitae. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Tellus cras adipiscing enim eu. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Est sit amet facilisis magna etiam tempor orci eu. Libero nunc consequat interdum varius sit. Mollis aliquam ut porttitor leo a diam. Adipiscing tristique risus nec feugiat in fermentum posuere urna nec. Orci ac auctor augue mauris. Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="assets/Profile.ico" type="image/x-icon">
 
-Cursus vitae congue mauris rhoncus aenean vel elit. Eget velit aliquet sagittis id. Donec adipiscing tristique risus nec feugiat in. Nec nam aliquam sem et tortor consequat id. Ut porttitor leo a diam sollicitudin tempor id eu. Cursus euismod quis viverra nibh. Lectus proin nibh nisl condimentum id venenatis a condimentum. Volutpat ac tincidunt vitae semper quis lectus nulla. Dui sapien eget mi proin sed libero enim sed faucibus. Tellus at urna condimentum mattis. Vitae turpis massa sed elementum tempus. Nam at lectus urna duis convallis.</p>
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such.
+       (assuming they don't block ads or whatever from Google) -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-68657454-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+
+      <!-- Updated with latest Creative -->
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Vanessa Chen</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button"
+              data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work2">Work2</a>
+          </li>
+					<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#funstuff">Fun</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#github">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="assets/resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  Intro Section -->
+  <header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Vanessa Chen</strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5">Programmer. Figure Skater. Rising Entrepreneur.</p>
+        <!--
+          <p class="text-italic mb-5">
+            Software Engineer</a>
+          </p>
+        -->
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Education Section -->
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-white">Education</h2>
+          <hr class="light my-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+          <i class="fa fa-4x fa-id-card-o text-faded sr-icons"></i>
+          <h3 class="text-white">Degree in Progress</h3>
+          <p class="text-faded">Bachelor of Science in Computer Science from
+          <a class="text-white-link" href="https://www.duke.edu/" class="text-blue">Duke University</a></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center div-padding-fix">
+          <i class="fa fa-4x fa-graduation-cap text-faded sr-icons"></i>
+          <h3 class="text-white">Graduation</h3>
+          <p class="text-faded">Expected Graduation in May 2023</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+          <i class="fa fa-4x fa-code text-faded sr-icons"></i>
+          <h3 class="text-white">Languages</h3>
+          <p class="text-faded no-margin">Java, Python</p>
+          <p class="text-faded">Javascript, HTML/CSS, C#</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+          <i class="fa fa-4x fa-file-code-o text-faded sr-icons"></i>
+          <h3 class="text-white">Software</h3>
+          <p class="text-faded no-margin">MATLAB, Fusion 360, SolidWorks</p>
+          <p class="text-faded">AutoCad, Unity, Blender</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#work">Wait There's More!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section. -->
+  <section id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Work and Research Experience</h2>
+          <hr class="primary">
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <!--<i class="fa fa-4x fa-fighter-jet text-primary sr-icons"></i>-->
+          <img src="assets/work_PM-Icon-structure.svg" width="60" height="60">
+          <h3 class="mt-4 mb-4">Product Marketing & Management Intern</h3>
+          <p class="text-muted"> <b>Jun to Aug 2019:</b> Analyzed large marketing datasets, quartered time spent on manual data collection by reorganizing campaign structure for easy export. Collaboratively developed effective strategies for app bundling at
+          <a class="text-link" href="https://www.cprime.com/" class="text-blue">CPrime Inc.</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <!--<i class="fa fa-4x fa-truck text-primary sr-icons"></i>-->
+          <img src="assets/work_microscope.svg" width="60" height="60">
+          <h3 class="mt-4 mb-4">Research Intern</h3>
+          <p class="text-muted"> <b> Feb 2018 to Aug 2019: </b> Published paper in
+          <a href="https://www.jove.com/video/58588/how-to-quantify-fraction-photoactivated-fluorescent-proteins-bulk" class="text-black-link"> JoVe Video Journal </a>
+          on the photoactivation efficiency of fluorescent proteins. Developed scripts to analyze cancer cell nuclei using CellProfiler. Created 50+ microfluidic devices to study the effect of mechanical stress on cancer cells.
+        at the Stanford School of Medicine <a class="text-link" href="http://med.stanford.edu/renzlaboratory.html" class="text-blue">Renz Lab.</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <!-- TIL: Bootstrap has awesome spacing classes
+                    https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+
+          <img src="assets/work_automation.svg" width="60" height="60">
+          <h3 class="mt-4 mb-4">Automation Engineering Intern</h3>
+          <p class="text-muted mb-4">Saved company 2,000+ hours of manual testing by automating an entire software portal’s UI.
+            Ensured quality and stability of newly developed portal by leading script creation. Used
+            <a href="https://sahipro.com/" class="text-black-link"> Sahi, </a> a JavaScript-based integrated automation testing tool.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <img src="assets/work_assembly.svg" width="60" height="60">
+          <h3 class="mt-4 mb-4">Duke CoLab Studio TA</h3>
+          <p class="text-muted"></p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#work2">
+        What about College Activities?</a>
+      </div>
+    </div>
+  </section>
+  <!-- Work Experience Section. -->
+  <section id="work2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Work2</h2>
+          <hr class="primary">
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-fighter-jet text-primary sr-icons"></i>
+          <h3 class="mt-4 mb-4">System Engineer</h3>
+          <p class="text-muted">Apr 2018 to Present: System Engineer at BAE</p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-truck text-primary sr-icons"></i>
+          <h3 class="mt-4 mb-4">Software Developer</h3>
+          <p class="text-muted">Jul 2017 to Apr 2018: C# Web API
+            development for Creative Logistics Solutions (CLS)</p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <!-- TIL: Bootstrap has awesome spacing classes
+                    https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+          <i class="fa fa-4x fa-android text-primary sr-icons"></i>
+          <i class="fa fa-4x fa-server text-primary sr-icons ml-4"></i>
+          <h3 class="mt-4 mb-4">Technical Intern</h3>
+          <p class="text-muted mb-4">Summer 2015: COBOL projects for
+            Fidelity Institutional (FI)</p>
+          <p class="text-muted mb-5">Summer 2016: Android features & improvements
+            for Fidelity Personal Investing (PI) </p>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fa fa-4x fa-pied-piper text-primary sr-icons"></i>
+          <h3 class="mt-4 mb-4">Research Assistant</h3>
+          <p class="text-muted">Summer 2014: C++ & JavaScript API work for
+            UMass Lowell's Engaging Computing Group Research Lab</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#funstuff">
+        Boring, show me some fun stuff!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Some fun stuff, leave the boring code for last. -->
+  <section class="bg-lightblue" id="funstuff">
+    <div class="container-fluid">
+      <div class="row images-vcenter">
+
+				<div class="col-lg-12 pb-3 text-center">
+          <h2 class="section-heading">Fun Stuff</h2>
+          <hr class="hr-black">
+        </div>
 
 
-  </body>
+
+				<!-- Fun stuff includes links to Mountain Biking, Skiing and Spotify playlists
+				<div class="col-lg-4 col-sm-6 text-center">
+          <a class="href-black" href="https://downing.io/Mountain-Biking/">
+						<img src="assets/portfolio/thumbnails/mtn-biking.jpg"
+								 class="img-fluid images-border"
+								 alt="Mountain Biking">
+					</a>
+          <h3 class="mt-4 mb-4">Mountain Biking</h3>
+        </div>
+
+				<div class="col-lg-4 col-sm-6 text-center">
+          <a class="href-black" href="https://downing.io/Skiing/">
+						<img src="assets/portfolio/thumbnails/skiing.jpg"
+								 class="img-fluid images-border-skiing"
+								 alt="SKIING!">
+					</a>
+          <h3 class="mt-4 mb-4">SKIING!</h3>
+        </div>
+
+				<div class="col-lg-4 col-sm-6 text-center">
+          <a class="href-black" href="https://downing.io/Spotify/">
+						<img src="assets/portfolio/thumbnails/spotify.png"
+								 class="img-fluid"
+								 alt="Spotify Playlists!">
+					</a>
+          <h3 class="mt-4 mb-4">Spotify Playlists!</h3>
+        </div>
+
+			</div>
+			<div class="text-center">
+        <a class="btn btn-black btn-xl js-scroll-trigger" href="#github">
+        Cool, show me the <&nbsp;&frasl;&nbsp;CODE&nbsp;></a>
+      </div>
+		</div>
+	</section> -->
+
+  <!-- GitHub Section -->
+  <section class="min-padding-top bg-dark" id="github">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+
+          <!-- Tweaking this part so the title links straight to my GitHub
+          page, without adding the silly extra "CLICK THIS ICON" text that was
+          there before. -->
+          <h2 class="section-heading">
+            <a class="text-white-link" href="https://github.com/vanessachen" class="text-white">GitHub: vanessachen
+              <i class="fa fa-1x fa-github-square" style="color:white"></i>
+            </a>
+          </h2>
+          <hr class="light">
+        </div>
+      </div>
+    </div>
+
+    <!-- GitHub links below -->
+    <div class="container-fluid p-0">  <!-- p-0 makes the images go edge to edge (no padding) -->
+      <div class="row no-gutters">
+
+        <!--
+						Redoing the links arrangement. Current thought is it should go:
+						downing.io <-> GUI II <-> Scrabble
+						UML Alerts <-> GUI I  <-> Racket Weather
+
+						In the future, add DB1 and DB2 projects, and maybe one other project
+						to complete the 3rd full row. Possibly College repository. This should
+						be possible after graduation. Could also add the DB2 app.
+
+						3rd future row would be:
+						DB2 Phase 2 <-> DB2 Android app <-> College
+
+						4th row could be:
+						React Tutorial <-> MEAN Project <-> another project
+
+						5th row could be:
+						HTML-Apps <-> Teaching <-> iSENSE-API
+
+						In the future, maybe add ECG lab work too (Teaching and API repositories)
+				-->
+
+        <!-- First Link: source code for downing.io -->
+        <!--
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="https://github.com/JasonD94/jasond94.github.io"> -->
+
+            <!--  Same photo as the header, but resized.
+                  URL: https://upload.wikimedia.org/wikipedia/commons/f/f5/Free-ride.jpg
+            -->
+
+            <!--
+            <img class="img-responsive" width="100%" height="auto" src="assets/portfolio/thumbnails/downing-io.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  downing.io
+                </div>
+                <div class="project-name">
+                  Source code for this personal website
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      -->
+
+        <!-- Second Link: source code for GUI II Project (Ski Maps) -->
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="http://downing.io/Ski-Maps/">
+            <!--  Awesome photo of JT and random skiers from Google Photos
+                  (Personal photo taken March 15 2017 at Cannon Mt)
+                  Public URL: https://goo.gl/photos/RXYDMpAVjZmXL4MD6
+            -->
+            <img class="img-responsive" width="100%" height="auto" src="assets/portfolio/thumbnails/ski-maps.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Ski Maps
+                </div>
+                <div class="project-name">
+                  GUI II Project. Front-end web project for showing skiing conditions.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Third Link: source code for GUI I last assignment (Scrabble) -->
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="https://github.com/JasonD94/scrabble">
+            <!--  Thumbnail from Wikipedia
+            URL: https://upload.wikimedia.org/wikipedia/commons/5/5d/Scrabble_game_in_progress.jpg
+            -->
+            <img class="img-responsive" width="100%" height="auto" src="assets/portfolio/thumbnails/scrabble.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Scrabble
+                </div>
+                <div class="project-name">
+                  Full implementation of the Scrabble board game.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fourth Link: source code for UMass Lowell Mobile Dev class (UML Alerts) -->
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="https://github.com/JasonD94/UML-Alerts">
+            <!-- Thumbnail from alphr.com
+            URL: http://cdn1.alphr.com/sites/alphr/files/2016/05/best_android_apps.jpg
+            -->
+            <img class="img-responsive" width="100%" height="auto" src="assets/portfolio/thumbnails/uml-alerts.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  UML Alerts
+                </div>
+                <div class="project-name">
+                  Android App for UMass Lowell Android App Development class.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fifth Link: source code for entire GUI I class (GUI I) -->
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="https://github.com/JasonD94/GUI">
+            <!-- Thumbnail from dtelepathy.com
+            URL: http://www.dtelepathy.com/blog/wp-content/uploads/2015/06/Technique-for-Faster-Web-Development.jpg -->
+            <img class="img-responsive" width="100%" height="auto" src="assets/portfolio/thumbnails/gui.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  GUI
+                </div>
+                <div class="project-name">
+                  GUI I GitHub repository. Front-end web pages.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sixth Link: source code for OPL Project (Racket Weather) -->
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="https://github.com/oplS16projects/Racket-Weather">
+            <!-- Thumbnail from gannett-cdn.com
+            URL: http://www.gannett-cdn.com/-mm-/3526533239800dac0c978150377d099025f1e52c/c=52-700-4303-3102&r=x1683&c=3200x1680/local/-/media/USATODAY/None/2014/10/03/1412368123000-Mesostorm-Lightning.jpg -->
+            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/racket-weather.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  Racket Weather
+                </div>
+                <div class="project-name">
+                  OPL Project. Visualizations in Racket using data from
+                  the OpenWeatherMap API.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="min-padding" id="contact">
+    <div class="container">
+
+      <!-- Contact Vanessa Row -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p>Feel free to reach out through email, or check out my LinkedIn and GitHub linked below.</p>
+        </div>
+      </div>
+
+      <!-- Email, LinkedIn, and GitHub links -->
+      <div class="row">
+
+        <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
+          <a href="mailto:vc86[AT]duke[DOT]edu">
+            <i class="fa fa-envelope fa-4x sr-icons"></i>
+          </a>
+          <p><a href="mailto:vc86[AT]duke[DOT]edu" class="text-blue">Email</a></p>
+        </div>
+
+        <div class="col-4 col-sm-4 col-lg-2 text-center">
+          <a href="https://www.linkedin.com/in/vanessa-chen888">
+            <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
+          </a>
+          <p><a href="https://www.linkedin.com/in/vanessa-chen888" class="text-blue">LinkedIn</a></p>
+        </div>
+
+        <div class="col-4 col-sm-4 col-lg-2 text-center">
+          <a href="https://github.com/vanessachen">
+            <i class="fa fa-github-square fa-4x sr-icons"></i>
+          </a>
+          <p><a href="https://github.com/vanessachen" class="text-blue">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  THIS IS THE FOOTER - displays a copyright notice and
+        that Bootstrap powers this web page.
+
+        6/16/2018: Added new line for the Source on Github... part, with margin bottom
+                   set to 1 (awesome new bootstrap 4 mb-1 class)-->
+  <div class="container">
+    <p class="text-center text-muted text-small mb-1">
+      Jason Downing &copy; 2015 - 2019. All rights reserved.
+      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
+    </p>
+    <p class="text-center text-muted text-small">
+      Source on <a href="https://github.com/JasonD94/jasond94.github.io" class="text-blue">GitHub</a>.
+      Theme based on the
+      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
+      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
+    </p>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+  </div>
+
+  <!-- 6/15/2018: Updated jQuery, added Popper.js, and updated Bootstrap JS to 4.1.1 -->
+  <!-- Also pulling in the Bootstrap 4 update from Start Bootstrap too
+       https://github.com/BlackrockDigital/startbootstrap-creative  -->
+
+  <!-- jQuery 3.3.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 4.1 JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <!-- Plugin & Theme JavaScript (With Bootstrap 4 Update) -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/creative.min.js"></script>
+
+</body>
 </html>
