@@ -114,6 +114,7 @@ img::-moz-selection {
   background-color: transparent
 }
 
+/* responsive web design, adapt to other web sizes*/
 @media (min-width:992px) {
   #mainNav {
     border-color: transparent;
