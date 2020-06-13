@@ -4,6 +4,11 @@
     This file contains CSS classes / IDs used to override the Creative Bootstrap Theme
 */
 
+.text-whitee {
+  color: #FFF;
+  font-size: 18px;
+}
+
 .text-small {
   font-size: 100%;
 }
